@@ -127,7 +127,18 @@ export const LaunchDay = ({
         gap: "12px",
       }}
     >
-      <BrandMark background="#6366f1" src={logo} />
+      <BrandMark background="#6366f1" src={logo}>
+        <div
+          style={{
+            color: "#e0e7ff",
+            display: "flex",
+            fontSize: "16px",
+            fontWeight: 700,
+          }}
+        >
+          {brand.charAt(0).toUpperCase()}
+        </div>
+      </BrandMark>
       <div
         style={{
           color: "#a1a1aa",
