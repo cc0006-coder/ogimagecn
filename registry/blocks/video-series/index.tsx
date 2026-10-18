@@ -19,22 +19,44 @@ export const VideoSeries = ({
   <div
     style={{
       backgroundColor: "#09090b",
-      backgroundImage:
-        "radial-gradient(circle at 100% 0%, rgba(99,102,241,0.20), transparent 50%), radial-gradient(circle at 0% 100%, rgba(16,185,129,0.14), transparent 50%)",
       color: "#fafafa",
       display: "flex",
       flexDirection: "column",
       height: "100%",
       justifyContent: "space-between",
       padding: "80px",
+      position: "relative",
       width: "100%",
     }}
   >
     <div
       style={{
+        backgroundImage:
+          "radial-gradient(circle at 100% 0%, rgba(99,102,241,0.20), transparent 50%)",
+        height: "100%",
+        left: 0,
+        position: "absolute",
+        top: 0,
+        width: "100%",
+      }}
+    />
+    <div
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 0% 100%, rgba(16,185,129,0.14), transparent 50%)",
+        height: "100%",
+        left: 0,
+        position: "absolute",
+        top: 0,
+        width: "100%",
+      }}
+    />
+    <div
+      style={{
         alignItems: "center",
         display: "flex",
         justifyContent: "space-between",
+        position: "relative",
       }}
     >
       <div
@@ -62,6 +84,7 @@ export const VideoSeries = ({
       style={{
         display: "flex",
         gap: "28px",
+        position: "relative",
       }}
     >
       {episodes.map((episode, i) => (
@@ -132,6 +155,7 @@ export const VideoSeries = ({
         alignItems: "center",
         display: "flex",
         gap: "12px",
+        position: "relative",
       }}
     >
       <BrandMark background="#6366f1" src={logo} />
